@@ -99,7 +99,7 @@ void runTests(const char* path) {
 }
 
 int main() {
-    char path[] = "/tmp/buffered-test";
+    char path[] = "/tmp/buffered-test-XXXXXX";
     int seed = ::mkstemp(path);
     if (seed < 0) {
         cerr << "创建临时文件失败" << '\n';
